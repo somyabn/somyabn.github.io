@@ -59,7 +59,10 @@ div {
     margin: 0 auto;
     min-width: 37.5rem;
 }
-
+div{
+/*border: 1px solid Chocolate;*/
+display: block;
+}
 /* Navigation Section */
 
 .top-navigation {
@@ -91,7 +94,7 @@ div {
 }
 
 .top-navigation .links li {
-    float: right;
+    
     display: inline-block;
     margin-left: 3rem;
 }
@@ -100,6 +103,15 @@ div {
     color: #4c5058;
     font-weight: 600;
 }
+.top-navigation .links > li:hover {
+    cursor: pointer;
+    color: #333333;
+    -webkit-transition: color 100ms ease-out 100ms;*/
+}
+section {
+    display: block;
+}
+
 .introduction {
     background-image: url('../images/first-background.jpg');
     background-position: center bottom;
@@ -180,7 +192,7 @@ button:hover {
 }
 
 ul.devices {
-      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
